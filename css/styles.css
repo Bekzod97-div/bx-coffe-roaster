@@ -1,3 +1,44 @@
+/* Fonts styles */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.woff2) format("woff2"),
+        url(../fonts/Roboto-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Medium.woff2) format("woff2"),
+        url(../fonts/Roboto-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.woff2) format("woff2"),
+        url(../fonts/Roboto-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --text-color: #333;
+    --white-text: #fff;
+    --brand-color: #c99b67;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -17,10 +58,9 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     line-height: 1.5;
     background-color: #fff;
-    color: #222;
 }
 
 img {
@@ -37,7 +77,165 @@ img {
     margin-right: auto;
 }
 
+/* Header styles */
+.home-bg {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-right: 0;
+    background-image: url(../img/home-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color-dodge;
+    background-color: rgba(232, 172, 105, 0.65);
+
+}
+/* Header styles */
+
+.header {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+/* logo link styles */
+.logo-link {
+    display: inline-block;
+    background-color: inherit;
+}
+.logo-link:hover {
+    opacity: 0.8;
+}
+logo-link:active {
+    opacity: 0.6;
+}
+
+.logo-img {
+    display: inline-block;
+    width: 203px;
+    height: 24px;
+
+}
+.logo-link::before {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(../img/coffe-bean.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+    content: "";
+}
+
+/* Nav styles */
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.nav-item:not(:last-child){
+    margin-right: 40px;
+}
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+
+}
+
+/* Hero styles */
+.hero {
+display: flex;
+justify-content: space-between;
+
+
+}
+.hero-content {
+    width: 100%;
+    max-width: 470px;
+    margin-top: 105px;
+    margin-left: 150px;
+    margin-right: 135px;
+    margin-bottom: 200px;
+
+}
+.hero-content-heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000;
+}
+.hero-content-text {
+    color: #000;
+    margin-bottom: 34px;
+}
+
+/* Hero link styles */
+.hero-content-link {
+    padding: 16px 24px;
+    background-color: #0a775f;
+    color: var(--white-text);
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.hero-content-link:hover {
+    opacity: 0.8;
+}
+.hero-content-link:active {
+    opacity: 0.6;
+}
+
+
+.circle-img {
+    width: 100%;
+    max-width: 710px;
+    background-image: url(../img/home-img.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+}
+
+.brand-img {
+    display: block;
+    position: fixed;
+    top: 40px;
+    left: 720px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    transform: rotate(-10deg);
+}
+
+
+
 /* Main content */
+
 .main-content {
     flex-grow: 1;
 }
