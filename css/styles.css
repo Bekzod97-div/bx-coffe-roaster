@@ -545,13 +545,13 @@ justify-content: space-between;
 .caffe-motto {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 160px;
     padding-right: 64px;
     padding-bottom: 200px;
     padding-top: 160px;
     background-image: url(../img/cup.png);
     background-repeat: no-repeat;
     background-position: left 165px top 160px;
-
 }
 
 .caffe-motto-content {
@@ -570,6 +570,31 @@ justify-content: space-between;
     line-height: 30px;
     color: var(--text-color);
 }
+
+/* Quality info section styles */
+.quality-info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 143px;
+    padding-right: 30px;
+    padding-bottom: 90px;
+}
+.quality-info-content {
+    margin-top: 100px;
+    margin-right: 40px;
+}
+.quality-info-content-heading {
+    margin-bottom: 24px;
+    text-align: unset;
+}
+.quality-info-content-text {
+    text-align: unset;
+}
+
+.quality-info-img {
+    margin-top: -120px;
+}
+
 
 
 /* Retina display styles */
