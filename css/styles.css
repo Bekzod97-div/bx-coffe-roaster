@@ -165,7 +165,15 @@ logo-link:active {
     letter-spacing: 1px;
     color: var(--text-color);
     text-transform: uppercase;
-
+    transition: border-bottom 0.3s ease,
+    padding-bottom 0.3s ease, opacity 0.3s ease;
+}
+.nav-link:hover {
+    border-bottom: 3px solid var(--text-color);
+    padding-bottom: 3px;
+}
+.nav-link:active {
+    opacity: 0.8;
 }
 
 /* Hero styles */
@@ -487,4 +495,38 @@ justify-content: space-between;
 }
 .beige {
     background-color: var(--brand-color);
+}
+
+            /* Footer styles */
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 65px 50px;
+    background-image: url(../img/home-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks-item {
+    list-style: none;
+}
+.social-networks-item:not(:last-child) {
+    margin-right: 30px;
+}
+.social-networks-link {
+    display: flex;
+    transition: opacity 0.3s ease;
+}
+.social-networks-link:hover {
+    opacity: 0.8;
+}
+.social-networks-link:active {
+    opacity: 0.6;
 }
