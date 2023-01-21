@@ -595,6 +595,47 @@ justify-content: space-between;
     margin-top: -120px;
 }
 
+/* Location info styles */
+.location-info-content {
+    display: flex;
+    background-image: none;
+}
+
+.location-info-item {
+    display: flex;
+    background-color: var(--white-text);
+    width: 100%;
+    max-width: 433px;
+    padding-left: 20px;
+    padding-right: 55px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.location-info-heading {
+    margin-bottom: 76px;
+}
+
+.location-info-box {
+    margin-top: 140px;
+}
+.uk {
+    margin-right: 82px;
+}
+.canada {
+    margin-right: 62px;
+}
+.australia {
+    margin-right: 56px;
+}
+
+.location-info-img {
+    display: flex;
+    width: 120px;
+    height: 143px;
+    object-fit: cover;
+}
+
 
 
 /* Retina display styles */
