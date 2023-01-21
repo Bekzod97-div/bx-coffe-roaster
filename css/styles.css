@@ -344,6 +344,7 @@ justify-content: space-between;
     margin-top: -420px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 80px;
 }
 
 .intro-content-list {
@@ -397,6 +398,7 @@ justify-content: space-between;
     background-attachment: fixed;
     background-color: #0a775f;
     padding: 50px 30px;
+    margin-bottom: 50px;
 }
 .intro-last-heading {
     color: var(--white-text);
@@ -433,6 +435,7 @@ justify-content: space-between;
 
 .intro-last-content-item {
     list-style: none;
+    margin-bottom: 60px;
 }
 .intro-last-content-item:not(:last-child) {
     margin-right: 20px;
@@ -442,16 +445,46 @@ justify-content: space-between;
 .intro-last-content-box {
     display: flex;
     flex-direction: column;
-
     flex-grow: 1;
     background-color: #f8f8f8;
     width: 100%;
     max-width: 433px;
     padding: 20px 20px 40px;
 }
-.intro-last-content-number {
+
+/* Intro last number wrapper */
+.number-rapper {
+    display: flex;
+    justify-content: flex-end;
 }
+
+.intro-last-content-number {
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--text-color);
+    margin-bottom: 45px;
+}
+
 .intro-last-content-heading {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .intro-last-content-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
+}
+
+/* Intro link styles */
+.intro-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beige {
+    background-color: var(--brand-color);
 }
