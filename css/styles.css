@@ -322,6 +322,7 @@ justify-content: space-between;
     padding-bottom: 500px;
     padding-right: 410px;
     padding-left: 410px;
+    margin-bottom: 30px;
 }
 .intro-heading {
     display: block;
@@ -351,9 +352,8 @@ justify-content: space-between;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin: 0;
-    padding: 0;
 }
+
 .intro-content-list:not(:last-child) {
     margin-right: 20px;
 }
@@ -372,9 +372,18 @@ justify-content: space-between;
     height: 500px;
     object-fit: cover;
     margin: 0;
+    margin-bottom: 28px;
     padding: 0;
 }
 .intro-content-heading {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: var(--text-color);
+    margin-bottom: 10px;
 }
 .intro-content-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--text-color);
 }
