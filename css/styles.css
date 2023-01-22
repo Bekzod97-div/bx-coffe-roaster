@@ -636,6 +636,11 @@ justify-content: space-between;
     object-fit: cover;
 }
 
+/* Create plan page styles */
+.creat-plan-img {
+    background-image: url(../img/creat-plan-bg.jpg);
+}
+
 
 
 /* Retina display styles */
