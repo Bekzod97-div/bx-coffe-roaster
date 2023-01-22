@@ -641,6 +641,66 @@ justify-content: space-between;
     background-image: url(../img/creat-plan-bg.jpg);
 }
 
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-content {
+    width: 100%;
+    max-width: 660px;
+}
+summary {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.drop-down {
+    margin-left: 45px;
+}
+.services-content-link-box {
+    display: flex;
+    width: 100%;
+}
+.services-content-link {
+    text-decoration: none;
+    color: var(--text-color);
+    padding-top: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 60px;
+    background-color: rgb(10, 119, 95, 0.2);
+    transition: background-color 0.4s ease,
+    opacity 0.4s ease, color 0.4s ease;
+}
+.services-content-link:not(:last-child) {
+    margin-right: 20px;
+}
+.services-content-link:hover {
+    background-color: #0a775f;
+    color: var(--white-text);
+}
+.services-content-link:active {
+    opacity: 0.8;
+}
+
+.services-content-link-heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.services-content-link-text {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
 
 
 /* Retina display styles */
@@ -677,5 +737,17 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 .caffe-motto {
     background-image: url(../img/cup@2x.png);
+}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+.caffe-motto {
+    background-image: url(../img/creat-plan-bg@2x.jpg);
 }
 }
