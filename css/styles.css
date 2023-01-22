@@ -686,7 +686,7 @@ justify-content: space-between;
     color: #000;
 }
 
-
+/* Services content */
 .services-content {
     width: 100%;
     max-width: 660px;
@@ -704,10 +704,19 @@ summary {
     line-height: 47px;
     color: #000;
     margin-bottom: 20px;
+    transition: color 0.3s ease;
+    cursor: pointer;
 }
+summary:hover {
+    color: #0a775f;
+}
+
+/* dropdown styles */
 .drop-down {
     margin-left: 45px;
 }
+
+/* Services content link styles */
 .services-content-link-box {
     display: flex;
     width: 100%;
@@ -743,6 +752,38 @@ summary {
 .services-content-link-text {
     font-size: 18px;
     line-height: 24px;
+}
+
+/* SUMMARY STYLES */
+.summary-conatiner {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 144px;
+    margin-top: 40px;
+}
+.summary {
+    display: block;
+    width: 100%;
+    max-width: 660px;
+    background-color: var(--brand-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+.summary-heading {
+    color: var(--white-text);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.summary-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--white-text);
+}
+.summary-highlight {
+    color: var(--text-color);
 }
 
 
