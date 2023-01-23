@@ -389,7 +389,7 @@ justify-content: space-between;
 }
 .intro-content-img {
     display: flex;
-    width: 435;
+    width: 435px;
     height: 500px;
     object-fit: cover;
     margin: 0;
@@ -434,7 +434,7 @@ justify-content: space-between;
     margin-top: -110px;
 }
 .intro-last-img {
-    display: block;
+    display: flex;
     width: 191px;
     height: 130px;
 }
@@ -442,21 +442,27 @@ justify-content: space-between;
     display: flex;
     background-image: url(../img/line-bg.svg);
     background-repeat: no-repeat;
-    background-position: left 65px top 50px;
-}
-
-.rectangle-img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    background-position: left 65px top 30px;
+    counter-reset: how-it-works;
 }
 
 /* Intro last content -item */
 
 .intro-last-content-item {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     margin-bottom: 60px;
+    counter-increment: how-it-works;
+
+}
+.intro-last-content-item::before {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: var(--white-text);
+    border: 4px solid var(--brand-color);
+    content: "";
 }
 .intro-last-content-item:not(:last-child) {
     margin-right: 20px;
@@ -472,14 +478,9 @@ justify-content: space-between;
     max-width: 433px;
     padding: 20px 20px 40px;
 }
-
-/* Intro last number wrapper */
-.number-rapper {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.intro-last-content-number {
+.intro-last-content-box::before {
+    content: "0"counter(how-it-works);
+    text-align: right;
     font-size: 64px;
     line-height: 75px;
     color: var(--text-color);
@@ -609,12 +610,8 @@ justify-content: space-between;
 }
 
 /* Location info styles */
-.location-info-content {
-    display: flex;
-    background-image: none;
-}
 
-.location-info-item {
+.location-info-container {
     display: flex;
     background-color: var(--white-text);
     width: 100%;
@@ -623,6 +620,7 @@ justify-content: space-between;
     padding-right: 55px;
     padding-top: 45px;
     padding-bottom: 40px;
+    flex-grow: 1;
 }
 
 .location-info-heading {
@@ -890,40 +888,13 @@ only screen and (                min-resolution: 2dppx) {
 .circle-img {
     background-image: url(../img/home-img@2x.jpg);
 }
+.about-img {
+    background-image: url(../img/coffe-maker@2x.jpg);
 }
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-    .about-img {
-        background-image: url(../img/coffe-maker@2x.jpg);
-    }
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
 .caffe-motto {
-    background-image: url(../img/cup@2x.png);
+background-image: url(../img/cup@2x.png);
 }
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
 .caffe-motto {
-    background-image: url(../img/creat-plan-bg@2x.jpg);
+background-image: url(../img/creat-plan-bg@2x.jpg);
 }
 }
