@@ -31,6 +31,8 @@
     --text-color: #333;
     --white-text: #fff;
     --brand-color: #c99b67;
+    --accent-color: #0a775f;
+    --outline-color: var(--accent-color);
 }
 
 * {
@@ -74,6 +76,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+}
+
+*:focus {
+    outline: 2px dashed var(--outline-color);
+    outline-offset: 3px;
 }
 
 /* Heading styles */
@@ -129,6 +136,7 @@ logo-link:active {
     display: inline-block;
     width: 203px;
     height: 24px;
+    flex-shrink: 0;
 
 }
 .logo-link::before {
@@ -163,14 +171,17 @@ logo-link:active {
     font-size: 14px;
     line-height: 13px;
     letter-spacing: 1px;
+    white-space: nowrap;
     color: var(--text-color);
     text-transform: uppercase;
     transition: border-bottom 0.3s ease,
-    padding-bottom 0.3s ease, opacity 0.3s ease;
+    padding-bottom 0.3s ease, opacity 0.3s ease,
+    color 0.3s ease;
 }
 .nav-link:hover {
     border-bottom: 3px solid var(--text-color);
     padding-bottom: 3px;
+    color: var(--accent-color);
 }
 .nav-link:active {
     opacity: 0.8;
@@ -209,7 +220,7 @@ justify-content: space-between;
 /* Hero link styles */
 .hero-content-link {
     padding: 16px 24px;
-    background-color: #0a775f;
+    background-color: var(--accent-color);
     color: var(--white-text);
     font-weight: 500;
     line-height: 19px;
@@ -285,6 +296,7 @@ justify-content: space-between;
 .collection-img {
     width: 450px;
     height: 370px;
+    flex-shrink: 0;
 }
 .collection-img:nth-child(2n+1) {
     margin-right: 117px;
@@ -399,12 +411,13 @@ justify-content: space-between;
 
 /* Intro_last section */
 .intro-last {
+    --outline-color: var(--white-text);
     background-image: url(../img/intro-last-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-color: #0a775f;
+    background-color: var(--accent-color);
     padding: 50px 30px;
     margin-bottom: 50px;
 }
@@ -712,7 +725,7 @@ summary {
     cursor: pointer;
 }
 summary:hover {
-    color: #0a775f;
+    color: var(--accent-color);
 }
 
 /* dropdown styles */
@@ -740,7 +753,7 @@ summary:hover {
     margin-right: 20px;
 }
 .services-content-link:hover {
-    background-color: #0a775f;
+    background-color: var(--accent-color);
     color: var(--white-text);
 }
 .services-content-link:active {
@@ -839,7 +852,7 @@ summary:hover {
     margin-bottom: 10px;
 }
 .order-highlight {
-    color: #0a775f;
+    color: var(--accent-color);
 }
 .order-sub-text {
     color: var(--text-color);
