@@ -536,10 +536,12 @@ justify-content: space-between;
 }
 .social-networks-link {
     display: flex;
-    transition: opacity 0.3s ease;
+    color: var(--text-color);
+    transition: color 0.3s ease,
+    opacity 0.3s ease;
 }
 .social-networks-link:hover {
-    opacity: 0.8;
+    color: var(--accent-color);
 }
 .social-networks-link:active {
     opacity: 0.6;
