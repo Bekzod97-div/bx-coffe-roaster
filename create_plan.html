@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creat Plan</title>
-    <!-- font awsome icon -->
-    <script src="https://kit.fontawesome.com/5cfacccd7d.js" crossorigin="anonymous"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -181,7 +179,7 @@
                                      </div>
                                 </div>
                                 <div class="link-box">
-                                    <a href="modal.html" class="hero-content-link" target="_blank">Create me plan </a>
+                                    <button class="hero-content-link" id="modal-btn">Create me plan </button>
                                 </div>
                                 <img class="left services-left" src="./img/leaves-left.svg" alt="" width="485" height="428">
                                 <img class="right services-right" src="./img/leaves-right.svg" alt="" width="545" height="590">
@@ -221,5 +219,23 @@
                 </ul>
             </footer>
 
+            <section class="modal">
+                <div class="order-box">
+                    <div class="modal-content">
+                        <h2 class="order-heading">order Summary</h2>
+                        <div class="order-content">
+                            <p class="order-text">“I drink my coffee as<span class="order-highlight order-text"> Filter</span>, with a <span class="order-highlight order-text">Decaf</span> type of bean. <span class="order-highlight order-text">250g</span> ground ala <span class="order-highlight order-text">Cafetiére</span>, sent to me <span class="order-highlight order-text">Every Week.</span>”</p>
+                            <p class="order-sub-text">Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. </p>
+                            <div class="order-btn-box">
+                                <p class="price">$14.00/ mo</p>
+                                <button type="submit" class="checkout-btn hero-content-link" id="modal-checkout">Checkout</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </section>
+
+
+            <script src="./js/main.js"></script>
 </body>
 </html>

@@ -240,7 +240,9 @@ justify-content: space-between;
     line-height: 19px;
     letter-spacing: 1px;
     text-decoration: none;
+    border: none;
     border-radius: 25px;
+    cursor: pointer;
 }
 .hero-content-link:hover {
     opacity: 0.8;
@@ -866,18 +868,30 @@ summary:hover {
 }
 
 /* MODAL PAGE AND ITS STYLES */
-.main-bg {
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     width: 100%;
-    height: 100vh;
-    background-image: url(../img/main-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
+.modal-on {
+    display: block;
+}
+
 .order-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: absolute;
+    top: 160px;
     width: 100%;
     max-width: 560px;
     background-color: #f8f8f8;
