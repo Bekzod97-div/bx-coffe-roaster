@@ -40,6 +40,19 @@
     padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 
 html {
     box-sizing: border-box;
@@ -76,6 +89,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 *:focus {
@@ -237,6 +251,7 @@ justify-content: space-between;
 
 
 .circle-img {
+    position: relative;
     width: 100%;
     max-width: 710px;
     background-image: url(../img/home-img.jpg);
@@ -246,10 +261,11 @@ justify-content: space-between;
 }
 
 .brand-img {
+    position: absolute;
     display: block;
     position: absolute;
-    top: 40px;
-    left: 800px;
+    top: -50px;
+    left: -50px;
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -269,11 +285,11 @@ justify-content: space-between;
 
 /* Collection section */
 .container {
-    background: url(../img/leaves-left.svg) left -130px top 50px no-repeat, url(../img/leaves-left-light.svg) left -180px bottom 200px no-repeat, url(../img/right-leave.svg) right -255px center no-repeat, url(../img/right-light-leave.svg) right -200px center no-repeat;
     padding-top: 0;
     }
 
 .collection {
+    position: relative;
     background: url(../img/collection-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -281,6 +297,30 @@ justify-content: space-between;
     background-attachment: fixed;
     background: rgba(231, 231, 197, 0.3);
     padding-top: 50px;
+}
+.left, .left-light, .right {
+    position: absolute;
+}
+.left {
+    top: 40px;
+    left: -220px;
+    width: 485px;
+    height: 428px;
+}
+
+.left-light {
+    bottom: 160px;
+    left: -230px;
+    width: 316px;
+    height: 269px;
+}
+
+.right {
+    bottom: 460px;
+    right: -330px;
+    width: 545px;
+    height: 590px;
+
 }
 .collection-heading {
     color: #000;
@@ -368,6 +408,7 @@ justify-content: space-between;
 }
 
 .intro-content-list {
+    position: relative;
     width: 100%;
     max-width: 435px;
     display: flex;
@@ -382,9 +423,8 @@ justify-content: space-between;
 .group-letters {
     display: block;
     position: absolute;
-    left: 7px;
-    top: 2640px;
-    right: 1480px;
+    left: -50px;
+    top: -50px;
 
 }
 .intro-content-img {
@@ -411,6 +451,7 @@ justify-content: space-between;
 
 /* Intro_last section */
 .intro-last {
+    position: relative;
     --outline-color: var(--white-text);
     background-image: url(../img/intro-last-bg.png);
     background-repeat: no-repeat;
@@ -427,13 +468,10 @@ justify-content: space-between;
 }
 
 /* Intro last img styles */
-.intro-last-img-box {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 68px;
-    margin-top: -110px;
-}
 .intro-last-img {
+    position: absolute;
+    top: 41px;
+    right: 68px;
     display: flex;
     width: 191px;
     height: 130px;
@@ -553,12 +591,8 @@ justify-content: space-between;
 }
 
 /* Caffe Motto section styles */
-.motto {
-    background-image: url(../img/leaves-left.svg);
-    background-position: left -130px top 40px;
-    background-repeat: no-repeat;
-}
 .caffe-motto {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 160px;
@@ -568,6 +602,12 @@ justify-content: space-between;
     background-image: url(../img/cup.png);
     background-repeat: no-repeat;
     background-position: left 165px top 160px;
+}
+
+.motto-img {
+    top: 40px;
+    left: -200px;
+    z-index: -1;
 }
 
 .caffe-motto-content {
@@ -589,6 +629,7 @@ justify-content: space-between;
 
 /* Quality info section styles */
 .quality-info {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-left: 143px;
@@ -608,7 +649,12 @@ justify-content: space-between;
 }
 
 .quality-info-img {
-    margin-top: -120px;
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
 }
 
 /* Location info styles */
@@ -656,7 +702,6 @@ justify-content: space-between;
 
 /* Services styles */
 .services-container {
-    background: url(../img/leaves-left.svg) left -180px center no-repeat, url(../img/leaves-left-light.svg) left -230px bottom 250px no-repeat, url(../img/right-leave.svg) right -275px top 200px no-repeat, url(../img/right-light-leave.svg) right -180px top 300px no-repeat;
     padding-top: 0;
 }
 
@@ -665,6 +710,17 @@ justify-content: space-between;
     padding-left: 30px;
     padding-right: 144px;
     padding-bottom: 60px;
+    position: relative;
+}
+
+/* Services side image */
+.services-left {
+    top: 615px;
+    left: -250px;
+}
+.services-right {
+    top: 176px;
+    right: -380px;
 }
 
 .services {
